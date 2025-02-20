@@ -36,7 +36,7 @@ def plot_time_series_decomposition(df, decomposition):
     plt.show()
 
 
-def adf_test(series):
+def unit_root_test(series):
     result = adfuller(series)
     print('ADF Statistic: %f' % result[0])
     print('p-value: %f' % result[1])
